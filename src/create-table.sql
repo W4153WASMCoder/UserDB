@@ -5,7 +5,7 @@ create schema db_user;
 use db_user;
 
 CREATE TABLE if not exists Users (
-    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT PRIMARY KEY AUTO_INCREMENT,
     sub VARCHAR(255) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL,
     name VARCHAR(255),
