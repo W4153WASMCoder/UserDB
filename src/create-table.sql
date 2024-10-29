@@ -4,15 +4,16 @@ create schema db_user;
 
 use db_user;
 
-create table if not exists users(
-    user_id         int not null,
-    user_name       nvarchar(100) not null,
-    password        nvarchar(255) not null,
-    email           nvarchar(100) not null,
-    create_date     datetime default now(),
-    last_login      datetime default now(),
-    primary key (user_id)
+CREATE TABLE if not exists Users (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    sub VARCHAR(255) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL,
+    name VARCHAR(255),
+    picture VARCHAR(2083),
+    lastLogin DATETIME,
+    INDEX (email)
 );
+
 
 create table if not exists active_tokens(
     token_id        int not null,
