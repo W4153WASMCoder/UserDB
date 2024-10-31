@@ -4,7 +4,7 @@ create schema db_user;
 
 use db_user;
 
-CREATE TABLE if not exists Users (
+CREATE TABLE if not exists users (
     user_id INT PRIMARY KEY AUTO_INCREMENT,
     sub VARCHAR(255) NOT NULL UNIQUE,
     email VARCHAR(255) NOT NULL,
