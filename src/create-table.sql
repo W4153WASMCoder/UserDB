@@ -16,7 +16,7 @@ CREATE TABLE if not exists users (
 
 
 create table if not exists active_tokens(
-    token_id        int not null,
+    token_id        int AUTO_INCREMENT,
     user_id         int,
     ttl             int default 3600,
     create_date     datetime default now(),
