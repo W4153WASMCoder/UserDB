@@ -65,10 +65,6 @@ Replace `<table_name>` with the actual table name you wish to inspect.
 - Make sure to update any services or applications that connect to this database with the correct database name, user, and password.
 - For security, it is recommended to create a dedicated MySQL user with limited privileges to access this database instead of using the root user.
 
-## License
-
-[Specify license information if applicable]
-
 ---
 
 This setup guide should help you initialize and verify the `UserDB` database quickly. If you need to make changes to the schema or sample data, you can modify the SQL files before executing them.
