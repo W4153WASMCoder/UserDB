@@ -9,16 +9,7 @@ This repository contains the SQL scripts needed to set up the `UserDB` database,
 
 ## Database Setup
 
-### Step 1: Clone the Repository
-
-Begin by cloning the repository to your local environment:
-
-```bash
-git clone https://github.com/W4153WASMCoder/UserDB.git
-cd UserDB/src
-```
-
-### Step 2: Create the Database
+### Step 1: Create the Database
 
 Log into your MySQL server and create a new database for the user data. Replace `db_user` with your preferred database name if desired.
 
@@ -28,7 +19,7 @@ CREATE DATABASE db_user;
 USE db_user;
 ```
 
-### Step 3: Run the SQL Scripts
+### Step 2: Run the SQL Scripts
 
 With the `db_user` database selected, run the provided SQL scripts to create tables and insert dummy data.
 
@@ -44,7 +35,7 @@ With the `db_user` database selected, run the provided SQL scripts to create tab
    mysql -u root -p db_user < dummy-data.sql
    ```
 
-### Step 4: Verify the Setup
+### Step 3: Verify the Setup
 
 To confirm that the tables and data were created successfully, you can run the following query to see the tables:
 
